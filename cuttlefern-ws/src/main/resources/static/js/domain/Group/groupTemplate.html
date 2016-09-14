@@ -1,0 +1,18 @@
+<div class="container-fluid">
+	<div class="col-md-10 col-md-offset-1">
+		<div class="jumbotron">
+			<h1>Groups</h1>
+		</div>
+
+		<div class="list-group">
+			<a ng-repeat="group in groupController.groups"
+				ng-href="#group/{{group.id}}" class="list-group-item"> <span
+				class="glyphicon glyphicon-group" aria-hidden="true"></span>
+				{{group.name}}
+			</a>
+		</div>
+		
+		
+		
+	</div>
+</div>

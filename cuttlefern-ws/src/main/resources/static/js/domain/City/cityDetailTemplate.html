@@ -1,0 +1,60 @@
+<div class="container-fluid">
+	<div class="col-md-10 col-md-offset-1">
+
+		<div class="jumbotron">
+			<h1>{{cityDetailController.city.name}}</h1>
+		</div>
+
+		<div>
+			<form class="form-horizontal">
+
+				<div class="form-group">
+					<label for="city" class="col-sm-2 control-label">City</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="city"
+							placeholder="Name" ng-model="cityDetailController.city.name"><br>
+						<br>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="state" class="col-sm-2 control-label">State</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="state"
+							placeholder="Name"
+							ng-model="cityDetailController.city.state.name"><br>
+						<br>
+					</div>
+				</div>
+
+
+
+				<div class="form-group">
+					<label for="role" class="col-sm-2 control-label">Role</label>
+					<div class="col-sm-8">
+						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button"
+								id="roleMenu" data-toggle="dropdown">
+								{{personDetailController.person.role.role}} <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li ng-repeat="role in personDetailController.availableRoles"><a
+									style="cursor: pointer;"
+									ng-click="personDetailController.roleSelected(role)">{{role}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-8">
+						<button type="submit" class="btn btn-success"
+							ng-click="cityDetailController.updateCityDetails()">Save!</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+
