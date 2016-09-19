@@ -1,0 +1,107 @@
+body {
+  background-color: #FAEBD7;
+}
+
+@font-face {
+  font-family: 'Aguafina Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aguafina Script Regular'), local('AguafinaScript-Regular'), url(http://fonts.gstatic.com/s/aguafinascript/v5/65g7cgMtMGnNlNyq_Z6CvJ6NrsdC0qWyfM-y9kwQ5jk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.jumbotron {
+  background-color: #FFFF00;
+  text-align: center;
+  font-family: Aguafina Script;
+  color: #e74c3c;
+}
+
+.navbar {
+  background-color: #7FFF00; 
+  text-align: center;
+}
+
+.navbar ul {
+  width: 70%;
+  margin: auto;
+}
+
+.navbar-default .navbar-brand {
+  color: #00008B;
+  font-family: Fantasy;
+  text-decoration: none;
+  font-size: 4vh;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #e74c3c;
+  font-family: Aguafina Script;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+h1.home-page.jumbotron {
+  font-size: 15vh;
+}
+
+.white.list-group-item {
+  color: #ecf0f1;
+}
+
+.list-group-item {
+  font-weight: bold;
+  background-color: #1E90FF;
+  color: #ecf0f1;
+  margin-top: 1%;
+}
+
+.input-group-addon {
+  background-color: #27ae60;
+}
+
+.input-group-addon input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #27ae60;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control:hover {
+    text-decoration: none;
+}
+
+.form-control {
+  background-color: #27ae60;
+  text-align-last: center;
+  color: white;
+  font-weight: bold;
+}
+
+.control-label {
+  color: #e74c3c;
+}
+
+.home-page.question {
+  text-align: center;
+  font-family: Aguafina Script;
+  color: #FF0000;
+}
+
+.list-group{
+  text-align: center;
+}
+
+.btn-success {
+  color: #ecf0f1;
+  background-color: #27ae60;
+}
+
+.btn-success:hover {
+  color: #ecf0f1;
+  background-color: #27ae60;
+}

@@ -5,7 +5,7 @@ Built-By: ft1
 Implementation-Vendor-Id: com.cooksys
 Build-Jdk: 1.8.0_101
 Implementation-URL: http://projects.spring.io/spring-boot/SpringAngula
- rBootProject1Jar-ws/
+ rBootProject1Jar-ws-webpack/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 

@@ -1,0 +1,80 @@
+<div class="container-fluid">
+	<div class="col-md-10 col-md-offset-1">
+
+		<div class="jumbotron">
+			<h1>{{personEditController.person.name}}</h1>
+		</div>
+
+		<div>
+			<form class="form-horizontal" ng-submit="personEditController.save()">
+
+				<div class="form-group">
+					<label for="name" class="col-sm-2 control-label">Name</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="name"
+							placeholder="Name" ng-model="personEditController.person.name">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="city" class="col-sm-2 control-label">City</label>
+					<div class="col-sm-9">
+						<select class="form-control" ng-options="city as city.name for city in personEditController.cities"
+							ng-model="personEditController.person.city" ng-change="changeCity()">
+							<option value="">{{personEditController.person.city.name}}</option>
+						</select>
+						{{personEditController.person.city}}
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="state" class="col-sm-2 control-label">State</label>
+					<div class="col-sm-9" id="state">
+						<select class="form-control" ng-options="state as state.name for state in personEditController.states"
+   						ng-model="personEditController.person.city.state" ng-change="changeState()">
+							<option value="">{{personEditController.person.city.state.name}}</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="interests" class="col-sm-2 control-label">Interests</label>
+					<div class="col-sm-9" id="interests">
+						<div class="input-group" ng-repeat="interest in personEditController.person.interests">
+							<span class="input-group-addon">
+								<input type="checkbox" aria-label="...">
+							</span>
+							<a  readonly class="green form-control">
+							<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+								{{interest.name}}
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="groups" class="col-sm-2 control-label">Groups</label>
+					<div class="col-sm-9" id="groups">
+						<div class="input-group" ng-repeat="group in personEditController.person.groups">
+				      <span class="input-group-addon">
+				        <input type="checkbox" aria-label="...">
+				      </span>
+				      <a  readonly class="green form-control">
+							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+								{{group.name}}
+							</a>
+				    </div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-offset-9 col-xs-3 col-sm-2">
+						<button type="submit" class="col-xs-12 btn btn-success"
+							ng-click="personEditController.saveButton()">Save</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>

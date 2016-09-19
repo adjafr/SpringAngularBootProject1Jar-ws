@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cooksys</groupId>
-	<artifactId>SpringAngularBootProject1Jar-ws</artifactId>
+	<artifactId>SpringAngularBootProject1Jar-ws-webpack</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
